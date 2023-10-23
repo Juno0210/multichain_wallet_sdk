@@ -1,3 +1,5 @@
+// Evm Types
+
 export type EvmWallet = {
     address: string,
     privateKey: string,
@@ -35,4 +37,19 @@ export type EvmTransaction = {
     nonce?: number,
     gasLimit?: number,
     gasPrice?: number
+}
+
+// BTC Types
+
+export type BtcNetwork = "bitcoin" | "regtest" | "testnet"
+
+export type BtcWallet = {
+    address: string,
+    privateKey: string,
+    mnemonic: string
+}
+
+export type BtcAccount = {
+    address: string,
+    privateKey: string
 }
